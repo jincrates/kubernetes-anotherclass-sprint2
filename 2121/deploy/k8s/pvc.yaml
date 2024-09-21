@@ -16,6 +16,8 @@ spec:
       storage: 2G
   accessModes:
     - ReadWriteOnce
+  hostPath:
+    path: "/root/k8s-local-volume/2121"
   selector:
     matchLabels:
       part-of: k8s-anotherclass
